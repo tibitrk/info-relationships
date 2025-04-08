@@ -24,7 +24,7 @@ public class StaffDetails {
     private String pfNumber;
 
     @OneToOne
-    @JoinColumn(name = "employee_id",referencedColumnName = "id")
+    @JoinColumn(name = "staff_id",referencedColumnName = "id")
     private Staff staff;
 
     public Long getId() {

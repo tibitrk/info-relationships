@@ -1,4 +1,7 @@
 package com.relationships.jpa_relationships.repository;
 
-public interface StaffDetailsRepository {
+import com.relationships.jpa_relationships.model.StaffDetails;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StaffDetailsRepository extends JpaRepository<StaffDetails, Long> {
 }
