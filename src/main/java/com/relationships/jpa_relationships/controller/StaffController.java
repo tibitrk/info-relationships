@@ -5,6 +5,7 @@ import com.relationships.jpa_relationships.model.StaffDetails;
 import com.relationships.jpa_relationships.repository.StaffDetailsRepository;
 import com.relationships.jpa_relationships.service.StaffDetailsService;
 import com.relationships.jpa_relationships.service.StaffService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/staff")
+@Tag(name = "staff API", description = "Operations related to staff")
 public class StaffController {
 
     @Autowired
